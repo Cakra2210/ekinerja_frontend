@@ -1,0 +1,151 @@
+.evaluation-filter-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.evaluation-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.success-chip {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.evaluation-form-grid {
+  gap: 1rem;
+}
+
+.score-pill {
+  min-width: 120px;
+  padding: 0.7rem 0.9rem;
+  border-radius: 16px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  display: grid;
+  gap: 0.15rem;
+  text-align: right;
+}
+
+.score-pill small {
+  font-size: 0.76rem;
+  color: var(--text-soft);
+}
+
+.score-pill strong {
+  font-size: 1.35rem;
+}
+
+.score-field {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.85rem;
+  border-radius: 14px;
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+}
+
+.score-field input[type="range"] {
+  width: 100%;
+}
+
+.score-field input[type="number"] {
+  max-width: 120px;
+}
+
+.score-field-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.evaluation-preview-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fbff 100%);
+  border: 1px solid #bfdbfe;
+}
+
+.evaluation-preview-card span,
+.evaluation-preview-card p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.evaluation-preview-card strong {
+  display: block;
+  font-size: 1.75rem;
+  color: var(--primary);
+}
+
+.inline-warning,
+.inline-danger {
+  padding: 0.8rem 0.95rem;
+  border-radius: 14px;
+  font-size: 0.94rem;
+}
+
+.inline-warning {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+}
+
+.inline-danger {
+  background: #fff1f2;
+  border: 1px solid #fda4af;
+  color: #be123c;
+}
+
+.coverage-list {
+  display: grid;
+  gap: 0.8rem;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.coverage-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+}
+
+.coverage-item p {
+  margin: 0.25rem 0 0;
+  color: var(--text-soft);
+}
+
+.checkbox-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+}
+
+@media (max-width: 720px) {
+  .evaluation-preview-card,
+  .coverage-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .score-pill {
+    text-align: left;
+  }
+}

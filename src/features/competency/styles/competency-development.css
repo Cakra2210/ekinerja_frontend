@@ -1,0 +1,96 @@
+.competency-hero .hero-copy p {
+  max-width: 780px;
+}
+
+.competency-side-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.competency-index-grid .attendance-index-item {
+  min-height: 78px;
+  align-items: flex-start;
+}
+
+.competency-filter-toolbar {
+  grid-template-columns: 160px 180px minmax(240px, 1fr) auto;
+}
+
+.competency-modal {
+  width: min(1120px, 100%);
+}
+
+.competency-form-grid {
+  align-items: start;
+}
+
+.competency-form-grid input[type="file"] {
+  padding: 12px;
+  background: #ffffff;
+}
+
+.competency-field-help {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.competency-filter-note {
+  margin-bottom: 14px;
+}
+
+.competency-preview-grid .attendance-preview-card span {
+  color: var(--text-soft);
+}
+
+.competency-progress-table .table {
+  min-width: 1120px;
+}
+
+.competency-activity-cell strong,
+.competency-hours-cell strong,
+.competency-score-cell strong {
+  display: block;
+}
+
+.competency-document-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.competency-file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.competency-file-link:hover {
+  text-decoration: underline;
+}
+
+.competency-name-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.competency-name-stack small {
+  color: var(--text-soft);
+}
+
+@media (max-width: 1100px) {
+  .competency-filter-toolbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .competency-modal {
+    width: 100%;
+  }
+}
